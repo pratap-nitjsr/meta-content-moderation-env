@@ -1,0 +1,559 @@
+[
+  {
+    "content_id": "post_001",
+    "content_type": "text_post",
+    "text": "Just had the best coffee of my life at the new cafe downtown! Highly recommend. ☕💯",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "difficulty": "easy"
+  },
+  {
+    "content_id": "post_002",
+    "content_type": "text_post",
+    "text": "P3opl3 from [ethnic group] should not be allowed in this country. They ruin absolutely everything fr fr. 😡😡",
+    "author_region": "DE",
+    "author_history": [
+      "hate_speech"
+    ],
+    "language": "en",
+    "ground_truth_labels": [
+      "hate_speech"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_003",
+    "content_type": "text_post",
+    "text": "CLICK HERE NOW!! You've won $10,000. Send your bank details to claim your prize!!! 💸👇 http://bit.ly/sc4mlink",
+    "author_region": "NG",
+    "author_history": [
+      "spam",
+      "scam"
+    ],
+    "language": "en",
+    "ground_truth_labels": [
+      "spam",
+      "scam"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_004",
+    "content_type": "text_post",
+    "text": "यह लोग हमारे देश के दुश्मन हैं, इन्हें बाहर निकालो और मार डालो। 🩸",
+    "author_region": "IN",
+    "author_history": [],
+    "language": "hi",
+    "ground_truth_labels": [
+      "hate_speech",
+      "violence"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard"
+  },
+  {
+    "content_id": "post_005",
+    "content_type": "text_post",
+    "text": "Beautiful day! the weather is kinda bussin no cap fr fr 🚶‍♂️",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "difficulty": "easy"
+  },
+  {
+    "content_id": "post_006",
+    "content_type": "text_post",
+    "text": "Love this movie. anyone going to the concert? @livenation wya?? 🔥🔥🔥",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "difficulty": "easy"
+  },
+  {
+    "content_id": "post_007",
+    "content_type": "text_post",
+    "text": "Great recipe for pasta, tbh I just eyeball the garlic🧄 ¯\\_(ツ)_/¯",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "difficulty": "easy"
+  },
+  {
+    "content_id": "post_008",
+    "content_type": "text_post",
+    "text": "Check out my new dog! #goldenretriever softest boi alive",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "difficulty": "easy"
+  },
+  {
+    "content_id": "post_009",
+    "content_type": "text_post",
+    "text": "gm world let's get this bread today. stay grinding 💪",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "difficulty": "easy"
+  },
+  {
+    "content_id": "post_010",
+    "content_type": "text_post",
+    "text": "Just vibing hbu? 👀",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "difficulty": "easy"
+  },
+  {
+    "content_id": "post_011",
+    "content_type": "text_post",
+    "text": "what a beautiful day! ☀️💖",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "difficulty": "easy"
+  },
+  {
+    "content_id": "post_012",
+    "content_type": "text_post",
+    "text": "I h8 all of them tbh. [ethnic group] needs 2 be deported ASAP. go back 2 ur country 😡",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "hate_speech"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_013",
+    "content_type": "text_post",
+    "text": "th3y r literally 4nimals and sh0uld be exterminated ngl.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "hate_speech"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_014",
+    "content_type": "text_post",
+    "text": "worst kind of people on this planet. gas them all fr.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "hate_speech"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_015",
+    "content_type": "text_post",
+    "text": "w3 must p.u.r.g.e them completely.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "hate_speech"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_016",
+    "content_type": "text_post",
+    "text": "सबको खत्म कर दो। इन कीड़ों को जला दो सालो को! 🔪🩸",
+    "author_region": "IN",
+    "author_history": [],
+    "language": "hi",
+    "ground_truth_labels": [
+      "hate_speech"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard"
+  },
+  {
+    "content_id": "post_017",
+    "content_type": "text_post",
+    "text": "You are so ugly and stupid. krill urself bro",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "harassment"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_018",
+    "content_type": "text_post",
+    "text": "literally nobody likes u, unfollow yourself 🤡",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "harassment"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_019",
+    "content_type": "text_post",
+    "text": "Stop posting, u absolute r-tard.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "harassment"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_020",
+    "content_type": "text_post",
+    "text": "I know where u live. don't sleep tonight.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "harassment"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_021",
+    "content_type": "text_post",
+    "text": "u r a total l0ser, no cap. literal trash.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "harassment"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_022",
+    "content_type": "text_post",
+    "text": "B.U.Y cheap R0lex watches here!!! bit.ly/spamurl123 🤑⌚",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "spam"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_023",
+    "content_type": "text_post",
+    "text": "FREE FOLLOWERS! CLICK MY BIO NOW!!! 💥🎉 #freemoney #followers",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "spam"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_024",
+    "content_type": "text_post",
+    "text": "Earn $5000 a week from home! DM me 'CASH' to start today!!!",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "spam"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_025",
+    "content_type": "text_post",
+    "text": "90% DISCOUNT on ALL items! Store closing down! click link below 👇👇",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "spam"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_026",
+    "content_type": "text_post",
+    "text": "Get crypto fast! send 0.1 ETH to 0xABCD and get 1.0 ETH back! HURRY",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "spam"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_027",
+    "content_type": "text_post",
+    "text": "WAKE UP SHEEPLE! The new vax contains 5G microchips designed by Bill Gates to track u. DO YOUR RESEARCH!! 🚫💉",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "misinformation"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard"
+  },
+  {
+    "content_id": "post_028",
+    "content_type": "text_post",
+    "text": "The earth is objectively flat, NASA stands for Never A Straight Answer. Stop believing the simulation!!",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "misinformation"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard"
+  },
+  {
+    "content_id": "post_029",
+    "content_type": "text_post",
+    "text": "Drinking pure bleach + lemon juice completely cures all viruses overnight. Big pharma is hiding this!!",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "misinformation"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard"
+  },
+  {
+    "content_id": "post_030",
+    "content_type": "text_post",
+    "text": "5G towers literally emit frequencies that mutate your DNA and cause COVID. look at the bird deaths!",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "misinformation"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard"
+  },
+  {
+    "content_id": "post_031",
+    "content_type": "text_post",
+    "text": "I will literally chop ur head off and mail it to ur mom.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "violence"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_032",
+    "content_type": "text_post",
+    "text": "let's go hurt someone tonight, im bored. who's down to jump that kid?",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "violence"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_033",
+    "content_type": "text_post",
+    "text": "Blood will spill. I've had enough of this fkn school.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "violence"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_034",
+    "content_type": "text_post",
+    "text": "K1lling them is the ONLY way out of this mess.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "violence"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_035",
+    "content_type": "text_post",
+    "text": "Urgent: Your IRS tax payment is overdue. Pay $500 in Target Gift Cards immediately or face arrest. 🛑",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "scam"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_036",
+    "content_type": "text_post",
+    "text": "Your PayPal account is locked! Click here: http://secure-login-paypal.xyz to verify your identity.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "scam"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_037",
+    "content_type": "text_post",
+    "text": "I am Prince AlWaleed, I need a trustworthy partner to transfer $10M. Reply with your bank routing details.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "scam"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_038",
+    "content_type": "text_post",
+    "text": "Send me $50 on CashApp and I'll flip it to $500 for you in 1 hour. GUARANTEED.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "scam"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "medium"
+  },
+  {
+    "content_id": "post_039",
+    "content_type": "text_post",
+    "text": "I just can't take it anymore, goodbye world. this is my last tweet. 💔🔫",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "self_harm"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard"
+  },
+  {
+    "content_id": "post_040",
+    "content_type": "text_post",
+    "text": "how many advil pills does it take to finally end it? asking for a friend",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "self_harm"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard"
+  },
+  {
+    "content_id": "post_041",
+    "content_type": "text_post",
+    "text": "You people are absolute trash and I will destroy u all. ugly [slur] rtards, go jump off a bridge.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "hate_speech",
+      "harassment",
+      "violence"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard"
+  },
+  {
+    "content_id": "post_042",
+    "content_type": "text_post",
+    "text": "Listen here u fgt, I will slice your throat and upload the vid. 🩸",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "hate_speech",
+      "harassment",
+      "violence"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard"
+  }
+]

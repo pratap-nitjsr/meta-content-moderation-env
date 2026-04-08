@@ -1,0 +1,464 @@
+[
+  {
+    "thread_id": "thread_001",
+    "messages": [
+      {
+        "content_id": "wa_001_m1",
+        "content_type": "whatsapp_message",
+        "text": "Hey did u hear?? The g0v is putting 5G microchips in the new covid boosters!! DO NOT TAKE IT! \ud83d\udeab\ud83d\udc89",
+        "author_region": "BR",
+        "author_history": [],
+        "language": "pt",
+        "position": 1
+      },
+      {
+        "content_id": "wa_001_m2",
+        "content_type": "whatsapp_message",
+        "text": "OMG fr?? Yes I'm forwarding this to the family group chat rn!!",
+        "author_region": "BR",
+        "author_history": [],
+        "language": "pt",
+        "position": 2
+      }
+    ],
+    "ground_truth_thread_labels": [
+      "misinformation"
+    ],
+    "ground_truth_action": "restrict",
+    "difficulty": "extreme",
+    "cultural_context": "Brazilian WhatsApp viral forwarding chains often spread deeply embedded anti-vax conspiracies disguised as friendly warnings."
+  },
+  {
+    "thread_id": "thread_002",
+    "messages": [
+      {
+        "content_id": "wa_002_m1",
+        "content_type": "whatsapp_message",
+        "text": "<Voice Message: 0:13> Can someone pick up milk?",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 1
+      },
+      {
+        "content_id": "wa_002_m2",
+        "content_type": "whatsapp_message",
+        "text": "Yeah I'll grab it on my way home rn.",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 2
+      }
+    ],
+    "ground_truth_thread_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "difficulty": "extreme",
+    "cultural_context": "A harmless everyday family group chat logistics discussion."
+  },
+  {
+    "thread_id": "thread_003",
+    "messages": [
+      {
+        "content_id": "wa_003_m1",
+        "content_type": "whatsapp_message",
+        "text": "<Voice Message: 0:13> Can someone pick up milk?",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 1
+      },
+      {
+        "content_id": "wa_003_m2",
+        "content_type": "whatsapp_message",
+        "text": "Yeah I'll grab it on my way home rn.",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 2
+      }
+    ],
+    "ground_truth_thread_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "difficulty": "extreme",
+    "cultural_context": "A harmless everyday family group chat logistics discussion."
+  },
+  {
+    "thread_id": "thread_004",
+    "messages": [
+      {
+        "content_id": "wa_004_m1",
+        "content_type": "whatsapp_message",
+        "text": "<Voice Message: 0:13> Can someone pick up milk?",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 1
+      },
+      {
+        "content_id": "wa_004_m2",
+        "content_type": "whatsapp_message",
+        "text": "Yeah I'll grab it on my way home rn.",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 2
+      }
+    ],
+    "ground_truth_thread_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "difficulty": "extreme",
+    "cultural_context": "A harmless everyday family group chat logistics discussion."
+  },
+  {
+    "thread_id": "thread_005",
+    "messages": [
+      {
+        "content_id": "wa_005_m1",
+        "content_type": "whatsapp_message",
+        "text": "Bro the 5G towers are LITERALLY causing covid. I have proof.",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 1
+      },
+      {
+        "content_id": "wa_005_m2",
+        "content_type": "whatsapp_message",
+        "text": "Send the link!! I knew the govt was lying.",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 2
+      }
+    ],
+    "ground_truth_thread_labels": [
+      "misinformation"
+    ],
+    "ground_truth_action": "restrict",
+    "difficulty": "extreme",
+    "cultural_context": "A QAnon style conspiracy theory spreading rapidly between friends."
+  },
+  {
+    "thread_id": "thread_006",
+    "messages": [
+      {
+        "content_id": "wa_006_m1",
+        "content_type": "whatsapp_message",
+        "text": "Bro the 5G towers are LITERALLY causing covid. I have proof.",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 1
+      },
+      {
+        "content_id": "wa_006_m2",
+        "content_type": "whatsapp_message",
+        "text": "Send the link!! I knew the govt was lying.",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 2
+      }
+    ],
+    "ground_truth_thread_labels": [
+      "misinformation"
+    ],
+    "ground_truth_action": "restrict",
+    "difficulty": "extreme",
+    "cultural_context": "A QAnon style conspiracy theory spreading rapidly between friends."
+  },
+  {
+    "thread_id": "thread_007",
+    "messages": [
+      {
+        "content_id": "wa_007_m1",
+        "content_type": "whatsapp_message",
+        "text": "Hello dear, my assistant mistakenly added your number. but you seem like a kind person \ud83c\udf39",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 1
+      },
+      {
+        "content_id": "wa_007_m2",
+        "content_type": "whatsapp_message",
+        "text": "Haha who is this? sure nice to meet u",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 2
+      },
+      {
+        "content_id": "wa_007_m3",
+        "content_type": "whatsapp_message",
+        "text": "I am an investor in Dubai. I can show you how to double your money in crypto easily, just click http://scam.ru/wallet",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 3
+      }
+    ],
+    "ground_truth_thread_labels": [
+      "scam"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "extreme",
+    "cultural_context": "A pig-butchering romance/crypto scam unfolding in a thread."
+  },
+  {
+    "thread_id": "thread_008",
+    "messages": [
+      {
+        "content_id": "wa_008_m1",
+        "content_type": "whatsapp_message",
+        "text": "Hello dear, my assistant mistakenly added your number. but you seem like a kind person \ud83c\udf39",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 1
+      },
+      {
+        "content_id": "wa_008_m2",
+        "content_type": "whatsapp_message",
+        "text": "Haha who is this? sure nice to meet u",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 2
+      },
+      {
+        "content_id": "wa_008_m3",
+        "content_type": "whatsapp_message",
+        "text": "I am an investor in Dubai. I can show you how to double your money in crypto easily, just click http://scam.ru/wallet",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 3
+      }
+    ],
+    "ground_truth_thread_labels": [
+      "scam"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "extreme",
+    "cultural_context": "A pig-butchering romance/crypto scam unfolding in a thread."
+  },
+  {
+    "thread_id": "thread_009",
+    "messages": [
+      {
+        "content_id": "wa_009_m1",
+        "content_type": "whatsapp_message",
+        "text": "Hello dear, my assistant mistakenly added your number. but you seem like a kind person \ud83c\udf39",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 1
+      },
+      {
+        "content_id": "wa_009_m2",
+        "content_type": "whatsapp_message",
+        "text": "Haha who is this? sure nice to meet u",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 2
+      },
+      {
+        "content_id": "wa_009_m3",
+        "content_type": "whatsapp_message",
+        "text": "I am an investor in Dubai. I can show you how to double your money in crypto easily, just click http://scam.ru/wallet",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 3
+      }
+    ],
+    "ground_truth_thread_labels": [
+      "scam"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "extreme",
+    "cultural_context": "A pig-butchering romance/crypto scam unfolding in a thread."
+  },
+  {
+    "thread_id": "thread_010",
+    "messages": [
+      {
+        "content_id": "wa_010_m1",
+        "content_type": "whatsapp_message",
+        "text": "Did u see that TikTok Sarah posted? She is so fkn fat and ugly lmaooo \ud83d\udc80\ud83d\udc37",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 1
+      },
+      {
+        "content_id": "wa_010_m2",
+        "content_type": "whatsapp_message",
+        "text": "omg yes. let's all spam her comments with \ud83e\udd2e",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 2
+      }
+    ],
+    "ground_truth_thread_labels": [
+      "harassment"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "extreme",
+    "cultural_context": "A coordinated cyberbullying attempt among high school students."
+  },
+  {
+    "thread_id": "thread_011",
+    "messages": [
+      {
+        "content_id": "wa_011_m1",
+        "content_type": "whatsapp_message",
+        "text": "Did u see that TikTok Sarah posted? She is so fkn fat and ugly lmaooo \ud83d\udc80\ud83d\udc37",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 1
+      },
+      {
+        "content_id": "wa_011_m2",
+        "content_type": "whatsapp_message",
+        "text": "omg yes. let's all spam her comments with \ud83e\udd2e",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 2
+      }
+    ],
+    "ground_truth_thread_labels": [
+      "harassment"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "extreme",
+    "cultural_context": "A coordinated cyberbullying attempt among high school students."
+  },
+  {
+    "thread_id": "thread_012",
+    "messages": [
+      {
+        "content_id": "wa_012_m1",
+        "content_type": "whatsapp_message",
+        "text": "Did u see that TikTok Sarah posted? She is so fkn fat and ugly lmaooo \ud83d\udc80\ud83d\udc37",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 1
+      },
+      {
+        "content_id": "wa_012_m2",
+        "content_type": "whatsapp_message",
+        "text": "omg yes. let's all spam her comments with \ud83e\udd2e",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 2
+      }
+    ],
+    "ground_truth_thread_labels": [
+      "harassment"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "extreme",
+    "cultural_context": "A coordinated cyberbullying attempt among high school students."
+  },
+  {
+    "thread_id": "thread_013",
+    "messages": [
+      {
+        "content_id": "wa_013_m1",
+        "content_type": "whatsapp_message",
+        "text": "The Mayor's new tax plan is absolutely r-tarded and destroys the middle class.",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 1
+      },
+      {
+        "content_id": "wa_013_m2",
+        "content_type": "whatsapp_message",
+        "text": "Agreed. We need to vote that idiot out immediately and protest outside city hall.",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 2
+      }
+    ],
+    "ground_truth_thread_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "difficulty": "extreme",
+    "cultural_context": "Aggressive but protected political discourse criticizing public officials."
+  },
+  {
+    "thread_id": "thread_014",
+    "messages": [
+      {
+        "content_id": "wa_014_m1",
+        "content_type": "whatsapp_message",
+        "text": "The Mayor's new tax plan is absolutely r-tarded and destroys the middle class.",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 1
+      },
+      {
+        "content_id": "wa_014_m2",
+        "content_type": "whatsapp_message",
+        "text": "Agreed. We need to vote that idiot out immediately and protest outside city hall.",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 2
+      }
+    ],
+    "ground_truth_thread_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "difficulty": "extreme",
+    "cultural_context": "Aggressive but protected political discourse criticizing public officials."
+  },
+  {
+    "thread_id": "thread_015",
+    "messages": [
+      {
+        "content_id": "wa_015_m1",
+        "content_type": "whatsapp_message",
+        "text": "The Mayor's new tax plan is absolutely r-tarded and destroys the middle class.",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 1
+      },
+      {
+        "content_id": "wa_015_m2",
+        "content_type": "whatsapp_message",
+        "text": "Agreed. We need to vote that idiot out immediately and protest outside city hall.",
+        "author_region": "US",
+        "author_history": [],
+        "language": "en",
+        "position": 2
+      }
+    ],
+    "ground_truth_thread_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "difficulty": "extreme",
+    "cultural_context": "Aggressive but protected political discourse criticizing public officials."
+  }
+]

@@ -1,0 +1,384 @@
+[
+  {
+    "content_id": "img_001",
+    "content_type": "image_description",
+    "text": "IMAGE VISUAL: A crowded street protest at night. Prominent sign in foreground reads: 'DEPORT ALL [slur] NOW!'. The sign has blood-red painted text. OCR EXTRACT: 'DEPORT ALL [slur] NOW!'",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "hate_speech"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/img001/800/600"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "img_002",
+    "content_type": "image_description",
+    "text": "IMAGE VISUAL: A golden retriever playing in a sunny dog park, catching a frisbee. High resolution, bright lighting. No text present.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/img002/800/600"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "img_003",
+    "content_type": "image_description",
+    "text": "IMAGE VISUAL: A golden retriever playing in a sunny dog park, catching a frisbee. High resolution, bright lighting. No text present.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/img003/800/600"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "img_004",
+    "content_type": "image_description",
+    "text": "IMAGE VISUAL: A golden retriever playing in a sunny dog park, catching a frisbee. High resolution, bright lighting. No text present.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/img004/800/600"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "img_005",
+    "content_type": "image_description",
+    "text": "IMAGE VISUAL: A golden retriever playing in a sunny dog park, catching a frisbee. High resolution, bright lighting. No text present.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/img005/800/600"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "img_006",
+    "content_type": "image_description",
+    "text": "IMAGE VISUAL: A golden retriever playing in a sunny dog park, catching a frisbee. High resolution, bright lighting. No text present.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/img006/800/600"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "img_007",
+    "content_type": "image_description",
+    "text": "IMAGE VISUAL: Graffiti sprayed on a brick wall showing a large dark swastika symbol next to the letters '1488'. OCR EXTRACT: '1488'",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "hate_speech"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/img007/800/600"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "img_008",
+    "content_type": "image_description",
+    "text": "IMAGE VISUAL: Graffiti sprayed on a brick wall showing a large dark swastika symbol next to the letters '1488'. OCR EXTRACT: '1488'",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "hate_speech"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/img008/800/600"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "img_009",
+    "content_type": "image_description",
+    "text": "IMAGE VISUAL: Graffiti sprayed on a brick wall showing a large dark swastika symbol next to the letters '1488'. OCR EXTRACT: '1488'",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "hate_speech"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/img009/800/600"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "img_010",
+    "content_type": "image_description",
+    "text": "IMAGE VISUAL: Grainy security camera footage screenshot. Two men in hooded jackets are engaging in a brutal fight. One man is holding a large machete above his head preparing to strike. Blood is visible on the pavement.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "violence"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/img010/800/600"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "img_011",
+    "content_type": "image_description",
+    "text": "IMAGE VISUAL: Grainy security camera footage screenshot. Two men in hooded jackets are engaging in a brutal fight. One man is holding a large machete above his head preparing to strike. Blood is visible on the pavement.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "violence"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/img011/800/600"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "img_012",
+    "content_type": "image_description",
+    "text": "IMAGE VISUAL: Grainy security camera footage screenshot. Two men in hooded jackets are engaging in a brutal fight. One man is holding a large machete above his head preparing to strike. Blood is visible on the pavement.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "violence"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/img012/800/600"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "img_013",
+    "content_type": "image_description",
+    "text": "IMAGE VISUAL: Explicit webcam screenshot showing a person fully exposing their uncovered genitalia. The image is brightly lit in a bedroom setting.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "nudity"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/img013/800/600"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "img_014",
+    "content_type": "image_description",
+    "text": "IMAGE VISUAL: Explicit webcam screenshot showing a person fully exposing their uncovered genitalia. The image is brightly lit in a bedroom setting.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "nudity"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/img014/800/600"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "img_015",
+    "content_type": "image_description",
+    "text": "IMAGE VISUAL: Explicit webcam screenshot showing a person fully exposing their uncovered genitalia. The image is brightly lit in a bedroom setting.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "nudity"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/img015/800/600"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "img_016",
+    "content_type": "image_description",
+    "text": "IMAGE VISUAL: A crudely edited bar chart titled 'VACCINE DEATHS 2024'. The bars exponentially increase. Bold red text overlaid says 'THEY ARE LYING TO YOU. IT ALTERS YOUR DNA.' OCR EXTRACT: 'VACCINE DEATHS 2024 THEY ARE LYING TO YOU. IT ALTERS YOUR DNA.'",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "misinformation"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/img016/800/600"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "img_017",
+    "content_type": "image_description",
+    "text": "IMAGE VISUAL: A crudely edited bar chart titled 'VACCINE DEATHS 2024'. The bars exponentially increase. Bold red text overlaid says 'THEY ARE LYING TO YOU. IT ALTERS YOUR DNA.' OCR EXTRACT: 'VACCINE DEATHS 2024 THEY ARE LYING TO YOU. IT ALTERS YOUR DNA.'",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "misinformation"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/img017/800/600"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "img_018",
+    "content_type": "image_description",
+    "text": "IMAGE VISUAL: A crudely edited bar chart titled 'VACCINE DEATHS 2024'. The bars exponentially increase. Bold red text overlaid says 'THEY ARE LYING TO YOU. IT ALTERS YOUR DNA.' OCR EXTRACT: 'VACCINE DEATHS 2024 THEY ARE LYING TO YOU. IT ALTERS YOUR DNA.'",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "misinformation"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/img018/800/600"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "img_019",
+    "content_type": "image_description",
+    "text": "IMAGE VISUAL: First-person view of an arm covered in fresh, bleeding deep cuts from a razor blade. A bloody razor blade sits on the bathroom counter in the background.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "violence",
+      "self_harm"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/img019/800/600"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "img_020",
+    "content_type": "image_description",
+    "text": "IMAGE VISUAL: First-person view of an arm covered in fresh, bleeding deep cuts from a razor blade. A bloody razor blade sits on the bathroom counter in the background.",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ground_truth_labels": [
+      "violence",
+      "self_harm"
+    ],
+    "ground_truth_action": "remove",
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/img020/800/600"
+    ],
+    "media_types": [
+      "image"
+    ]
+  }
+]

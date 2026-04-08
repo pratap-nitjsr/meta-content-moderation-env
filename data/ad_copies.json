@@ -1,0 +1,506 @@
+[
+  {
+    "content_id": "ad_001",
+    "content_type": "ad_copy",
+    "text": "\ud83d\udea8 LOSE 30 POUNDS IN 10 DAYS \ud83d\udea8 with our patented miracle pill! Doctors hate us! Guaranteed results or 100% money back! Click here -> bit.ly/dietscam",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ad_targeting": {
+      "age_min": 18,
+      "age_max": 65,
+      "interests": [
+        "weight loss"
+      ]
+    },
+    "ground_truth_labels": [
+      "misinformation"
+    ],
+    "ground_truth_action": "remove",
+    "violated_policies": [
+      "AD_POLICY_HEALTH_CLAIMS_001"
+    ],
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/ad001/800/400"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "ad_002",
+    "content_type": "ad_copy",
+    "text": "Step into comfort with our new orthopedic sneakers! Designed for all-day walking. Shop the summer sale now for 20% off. \ud83d\udc5f\ud83d\udc5e",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ad_targeting": {
+      "age_min": 18
+    },
+    "ground_truth_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "violated_policies": [],
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/ad002/800/400"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "ad_003",
+    "content_type": "ad_copy",
+    "text": "Step into comfort with our new orthopedic sneakers! Designed for all-day walking. Shop the summer sale now for 20% off. \ud83d\udc5f\ud83d\udc5e",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ad_targeting": {
+      "age_min": 18
+    },
+    "ground_truth_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "violated_policies": [],
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/ad003/800/400"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "ad_004",
+    "content_type": "ad_copy",
+    "text": "Step into comfort with our new orthopedic sneakers! Designed for all-day walking. Shop the summer sale now for 20% off. \ud83d\udc5f\ud83d\udc5e",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ad_targeting": {
+      "age_min": 18
+    },
+    "ground_truth_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "violated_policies": [],
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/ad004/800/400"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "ad_005",
+    "content_type": "ad_copy",
+    "text": "Step into comfort with our new orthopedic sneakers! Designed for all-day walking. Shop the summer sale now for 20% off. \ud83d\udc5f\ud83d\udc5e",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ad_targeting": {
+      "age_min": 18
+    },
+    "ground_truth_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "violated_policies": [],
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/ad005/800/400"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "ad_006",
+    "content_type": "ad_copy",
+    "text": "Step into comfort with our new orthopedic sneakers! Designed for all-day walking. Shop the summer sale now for 20% off. \ud83d\udc5f\ud83d\udc5e",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ad_targeting": {
+      "age_min": 18
+    },
+    "ground_truth_labels": [
+      "clean"
+    ],
+    "ground_truth_action": "approve",
+    "violated_policies": [],
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/ad006/800/400"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "ad_007",
+    "content_type": "ad_copy",
+    "text": "CURE CANCER NATURALLY! Big pharma doesn't want you to know about this exotic root juice that aggressively targets tumors. Read the secret report here. \ud83c\udf31\ud83d\udd2c",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ad_targeting": {
+      "age_min": 40
+    },
+    "ground_truth_labels": [
+      "misinformation"
+    ],
+    "ground_truth_action": "remove",
+    "violated_policies": [
+      "AD_POLICY_HEALTH_CLAIMS_001"
+    ],
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/ad007/800/400"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "ad_008",
+    "content_type": "ad_copy",
+    "text": "CURE CANCER NATURALLY! Big pharma doesn't want you to know about this exotic root juice that aggressively targets tumors. Read the secret report here. \ud83c\udf31\ud83d\udd2c",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ad_targeting": {
+      "age_min": 40
+    },
+    "ground_truth_labels": [
+      "misinformation"
+    ],
+    "ground_truth_action": "remove",
+    "violated_policies": [
+      "AD_POLICY_HEALTH_CLAIMS_001"
+    ],
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/ad008/800/400"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "ad_009",
+    "content_type": "ad_copy",
+    "text": "CURE CANCER NATURALLY! Big pharma doesn't want you to know about this exotic root juice that aggressively targets tumors. Read the secret report here. \ud83c\udf31\ud83d\udd2c",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ad_targeting": {
+      "age_min": 40
+    },
+    "ground_truth_labels": [
+      "misinformation"
+    ],
+    "ground_truth_action": "remove",
+    "violated_policies": [
+      "AD_POLICY_HEALTH_CLAIMS_001"
+    ],
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/ad009/800/400"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "ad_010",
+    "content_type": "ad_copy",
+    "text": "\ud83d\udcb0 GUARANTEED 500% ROI IN 24 HOURS! Our AI crypto trading bot never loses. Deposit $100 and withdraw $500 tomorrow. Limited spots available! \ud83d\udcb0\ud83d\ude80",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ad_targeting": {
+      "age_min": 18
+    },
+    "ground_truth_labels": [
+      "scam"
+    ],
+    "ground_truth_action": "remove",
+    "violated_policies": [
+      "AD_POLICY_FINANCIAL_001"
+    ],
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/ad010/800/400"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "ad_011",
+    "content_type": "ad_copy",
+    "text": "\ud83d\udcb0 GUARANTEED 500% ROI IN 24 HOURS! Our AI crypto trading bot never loses. Deposit $100 and withdraw $500 tomorrow. Limited spots available! \ud83d\udcb0\ud83d\ude80",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ad_targeting": {
+      "age_min": 18
+    },
+    "ground_truth_labels": [
+      "scam"
+    ],
+    "ground_truth_action": "remove",
+    "violated_policies": [
+      "AD_POLICY_FINANCIAL_001"
+    ],
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/ad011/800/400"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "ad_012",
+    "content_type": "ad_copy",
+    "text": "\ud83d\udcb0 GUARANTEED 500% ROI IN 24 HOURS! Our AI crypto trading bot never loses. Deposit $100 and withdraw $500 tomorrow. Limited spots available! \ud83d\udcb0\ud83d\ude80",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ad_targeting": {
+      "age_min": 18
+    },
+    "ground_truth_labels": [
+      "scam"
+    ],
+    "ground_truth_action": "remove",
+    "violated_policies": [
+      "AD_POLICY_FINANCIAL_001"
+    ],
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/ad012/800/400"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "ad_013",
+    "content_type": "ad_copy",
+    "text": "Are they taking over your town? Keep your neighborhood PURE from [ethnic minority gang]. Join the local militia network today to protect your heritage. \ud83d\udee1\ufe0f\u270a",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ad_targeting": {
+      "interests": [
+        "nationalism"
+      ]
+    },
+    "ground_truth_labels": [
+      "hate_speech"
+    ],
+    "ground_truth_action": "remove",
+    "violated_policies": [
+      "AD_POLICY_TARGETING_001"
+    ],
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/ad013/800/400"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "ad_014",
+    "content_type": "ad_copy",
+    "text": "Are they taking over your town? Keep your neighborhood PURE from [ethnic minority gang]. Join the local militia network today to protect your heritage. \ud83d\udee1\ufe0f\u270a",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ad_targeting": {
+      "interests": [
+        "nationalism"
+      ]
+    },
+    "ground_truth_labels": [
+      "hate_speech"
+    ],
+    "ground_truth_action": "remove",
+    "violated_policies": [
+      "AD_POLICY_TARGETING_001"
+    ],
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/ad014/800/400"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "ad_015",
+    "content_type": "ad_copy",
+    "text": "Are they taking over your town? Keep your neighborhood PURE from [ethnic minority gang]. Join the local militia network today to protect your heritage. \ud83d\udee1\ufe0f\u270a",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ad_targeting": {
+      "interests": [
+        "nationalism"
+      ]
+    },
+    "ground_truth_labels": [
+      "hate_speech"
+    ],
+    "ground_truth_action": "remove",
+    "violated_policies": [
+      "AD_POLICY_TARGETING_001"
+    ],
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/ad015/800/400"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "ad_016",
+    "content_type": "ad_copy",
+    "text": "Ghost guns and unregistered AR-15 parts strictly for 'airsoft'. \ud83e\udd2b No background checks required, ships discreetly in 2 parts. DM to order. \ud83d\udd2b\ud83d\udce6",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ad_targeting": {
+      "age_min": 18
+    },
+    "ground_truth_labels": [
+      "violence"
+    ],
+    "ground_truth_action": "remove",
+    "violated_policies": [
+      "AD_POLICY_WEAPONS_001"
+    ],
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/ad016/800/400"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "ad_017",
+    "content_type": "ad_copy",
+    "text": "Ghost guns and unregistered AR-15 parts strictly for 'airsoft'. \ud83e\udd2b No background checks required, ships discreetly in 2 parts. DM to order. \ud83d\udd2b\ud83d\udce6",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ad_targeting": {
+      "age_min": 18
+    },
+    "ground_truth_labels": [
+      "violence"
+    ],
+    "ground_truth_action": "remove",
+    "violated_policies": [
+      "AD_POLICY_WEAPONS_001"
+    ],
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/ad017/800/400"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "ad_018",
+    "content_type": "ad_copy",
+    "text": "Ghost guns and unregistered AR-15 parts strictly for 'airsoft'. \ud83e\udd2b No background checks required, ships discreetly in 2 parts. DM to order. \ud83d\udd2b\ud83d\udce6",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ad_targeting": {
+      "age_min": 18
+    },
+    "ground_truth_labels": [
+      "violence"
+    ],
+    "ground_truth_action": "remove",
+    "violated_policies": [
+      "AD_POLICY_WEAPONS_001"
+    ],
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/ad018/800/400"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "ad_019",
+    "content_type": "ad_copy",
+    "text": "The US Government has SECRETS funds allocated to pay off your credit card debt, but you must act NOW. Click here to use this weird health trick loopholes to claim your $10,000 cash grant! \ud83c\udfe6\ud83d\udcb5",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ad_targeting": {
+      "age_min": 50
+    },
+    "ground_truth_labels": [
+      "scam",
+      "misinformation"
+    ],
+    "ground_truth_action": "remove",
+    "violated_policies": [
+      "AD_POLICY_FINANCIAL_001",
+      "AD_POLICY_HEALTH_CLAIMS_001"
+    ],
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/ad019/800/400"
+    ],
+    "media_types": [
+      "image"
+    ]
+  },
+  {
+    "content_id": "ad_020",
+    "content_type": "ad_copy",
+    "text": "The US Government has SECRETS funds allocated to pay off your credit card debt, but you must act NOW. Click here to use this weird health trick loopholes to claim your $10,000 cash grant! \ud83c\udfe6\ud83d\udcb5",
+    "author_region": "US",
+    "author_history": [],
+    "language": "en",
+    "ad_targeting": {
+      "age_min": 50
+    },
+    "ground_truth_labels": [
+      "scam",
+      "misinformation"
+    ],
+    "ground_truth_action": "remove",
+    "violated_policies": [
+      "AD_POLICY_FINANCIAL_001",
+      "AD_POLICY_HEALTH_CLAIMS_001"
+    ],
+    "difficulty": "hard",
+    "media_urls": [
+      "https://picsum.photos/seed/ad020/800/400"
+    ],
+    "media_types": [
+      "image"
+    ]
+  }
+]

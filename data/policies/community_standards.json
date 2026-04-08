@@ -1,0 +1,70 @@
+{
+  "version": "2024.1",
+  "policies": [
+    {
+      "id": "CS_HATE_001",
+      "name": "Hate Speech — Direct Attack",
+      "description": "Content that directly attacks people based on protected characteristics",
+      "violation_category": "hate_speech",
+      "action": "remove",
+      "severity": "high"
+    },
+    {
+      "id": "CS_HATE_002",
+      "name": "Hate Speech — Coded Language",
+      "description": "Content using indirect or coded language to demean protected groups",
+      "violation_category": "hate_speech",
+      "action": "escalate",
+      "severity": "medium"
+    },
+    {
+      "id": "CS_SPAM_001",
+      "name": "Coordinated Inauthentic Behavior",
+      "description": "Mass-distributed identical messages or coordinated spam networks",
+      "violation_category": "spam",
+      "action": "remove",
+      "severity": "medium"
+    },
+    {
+      "id": "CS_MISINFO_001",
+      "name": "Health Misinformation",
+      "description": "False claims about vaccines, cures, or medical treatments",
+      "violation_category": "misinformation",
+      "action": "restrict",
+      "severity": "high"
+    },
+    {
+      "id": "CS_POLITICAL_001",
+      "name": "Political Speech Protection",
+      "description": "Political opinions and criticism of governments are protected expression",
+      "violation_category": "clean",
+      "action": "approve",
+      "severity": "none",
+      "note": "May conflict with hate speech policies — requires escalation"
+    },
+    {
+      "id": "CS_HARM_001",
+      "name": "Self-Harm Content",
+      "description": "Content that promotes or provides instructions for self-harm",
+      "violation_category": "self_harm",
+      "action": "remove",
+      "severity": "critical"
+    },
+    {
+      "id": "CS_VIOLENCE_001",
+      "name": "Graphic Violence",
+      "description": "Depictions or glorification of real-world violence",
+      "violation_category": "violence",
+      "action": "remove",
+      "severity": "high"
+    },
+    {
+      "id": "CS_TERROR_001",
+      "name": "Terrorism and Extremism",
+      "description": "Content promoting, glorifying, or recruiting for terrorist organizations",
+      "violation_category": "terrorism",
+      "action": "remove",
+      "severity": "critical"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+# openenv.yaml
+name: meta-content-moderation-env
+version: "0.1.0"
+description: >
+  OpenEnv environment simulating real-world AI content moderation at Meta scale.
+  Agents must classify, label, and take enforcement actions on text posts,
+  image descriptions, ad copy, and WhatsApp-style messages across 4 tasks
+  ranging from easy single-label classification to hard multi-policy thread moderation.
+
+tags:
+  - openenv
+  - content-moderation
+  - nlp
+  - meta
+  - social-media
+  - safety
+
+author: "Team Neuron"
+license: MIT
+
+environment:
+  class: MetaContentModerationEnv
+  module: server.env
+  entry_point: server.app:app
+
+tasks:
+  - name: single-label-classify
+    difficulty: easy
+    description: Classify a single content item into one violation category or CLEAN
+    max_steps: 10
+    score_range: [0.0, 1.0]
+    content_types: [text_post, image_description]
+
+  - name: multi-label-classify
+    difficulty: medium
+    description: Assign all applicable violation labels to content that may violate multiple policies
+    max_steps: 12
+    score_range: [0.0, 1.0]
+    content_types: [text_post, ad_copy, whatsapp_message]
+
+  - name: ad-policy-compliance
+    difficulty: medium_hard
+    description: Review ad copy against ad policies, identify violations, and cite specific rule IDs
+    max_steps: 10
+    score_range: [0.0, 1.0]
+    content_types: [ad_copy]
+
+  - name: thread-moderation-hard
+    difficulty: hard
+    description: >
+      Moderate a full WhatsApp conversation thread with growing context window.
+      Handles cultural nuance, multi-label violations, and conflicting policy resolution.
+    max_steps: 15
+    score_range: [0.0, 1.0]
+    content_types: [whatsapp_message]
+
+observation_space:
+  type: object
+  fields:
+    step: integer
+    content_item:
+      content_id: string
+      content_type: enum [text_post, image_description, ad_copy, whatsapp_message]
+      text: string
+      author_region: string
+      language: string
+      author_history: list[string]
+      media_urls: list[string]
+      media_types: list[string]
+    policy_excerpt: string
+    thread_history: list[ContentItem]
+    conflicting_policies: list[string]
+    task_name: string
+    instructions: string
+
+action_space:
+  type: object
+  fields:
+    content_id: string
+    labels: list[enum[hate_speech, violence, nudity, spam, misinformation, harassment, self_harm, terrorism, scam, clean]]
+    action: enum [approve, remove, escalate, restrict, request_review]
+    confidence: float [0.0, 1.0]
+    reasoning: string
+    policy_citations: list[string]
+
+reward:
+  range: [-1.0, 1.0]
+  shape: partial_credit
+  components:
+    - label_precision
+    - label_recall
+    - action_correct
+    - policy_citation_score
+    - false_positive_penalty
+    - reasoning_quality
+
+api:
+  reset: POST /reset
+  step: POST /step
+  state: GET /state
+  health: GET /health
+
+server:
+  host: "0.0.0.0"
+  port: 7860
+  framework: fastapi

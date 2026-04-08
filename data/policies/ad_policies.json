@@ -1,0 +1,33 @@
+{
+  "version": "2024.1",
+  "policies": [
+    {
+      "id": "AD_POLICY_HEALTH_CLAIMS_001",
+      "name": "Prohibited Health Claims",
+      "description": "Ads must not make misleading health or medical claims",
+      "violation_category": "misinformation",
+      "action": "remove"
+    },
+    {
+      "id": "AD_POLICY_FINANCIAL_001",
+      "name": "Financial Products Disclosure",
+      "description": "Financial ads must include required disclosures",
+      "violation_category": "scam",
+      "action": "remove"
+    },
+    {
+      "id": "AD_POLICY_TARGETING_001",
+      "name": "Discriminatory Targeting",
+      "description": "Ads must not target or exclude based on protected characteristics",
+      "violation_category": "hate_speech",
+      "action": "remove"
+    },
+    {
+      "id": "AD_POLICY_WEAPONS_001",
+      "name": "Dangerous Goods",
+      "description": "Ads for illegal weapons or dangerous goods are prohibited",
+      "violation_category": "violence",
+      "action": "remove"
+    }
+  ]
+}
