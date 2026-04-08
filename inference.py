@@ -30,7 +30,10 @@ from __future__ import annotations
 import json
 import os
 import sys
-import dotenv
+try:
+    import dotenv
+except ImportError:
+    dotenv = None
 import textwrap
 import traceback
 from typing import Optional
@@ -39,7 +42,8 @@ from openai import OpenAI
 
 # ─── Configuration ────────────────────────────────────────────────────────────
 
-dotenv.load_dotenv()
+if dotenv:
+    dotenv.load_dotenv()
 
 API_BASE_URL = os.getenv("API_BASE_URL", "https://router.huggingface.co/v1")
 MODEL_NAME = os.getenv("MODEL_NAME", "meta-llama/Llama-3.3-70B-Instruct")
