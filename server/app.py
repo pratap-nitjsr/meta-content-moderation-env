@@ -84,7 +84,7 @@ def list_tasks() -> dict:
 
 
 @app.post("/reset", response_model=ModerationObservation)
-def reset(request: ResetRequest) -> ModerationObservation:
+def reset(request: ResetRequest = ResetRequest()) -> ModerationObservation:
     """
     Reset the environment to a new episode.
     Returns the first observation.
