@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY pyproject.toml uv.lock README.md requirements.txt ./
 
 # Install project dependencies securely
-RUN uv pip install -r requirements.txt
+RUN pip install -r requirements.txt
 RUN uv sync --frozen --no-install-project
 
 # Copy project source
