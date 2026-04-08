@@ -32,6 +32,7 @@ tasks:
     content_types: [text_post, image_description]
     grader:
       type: programmatic
+      entry_point: server.graders:grade_single_label
 
   - name: multi-label-classify
     difficulty: medium
@@ -41,6 +42,7 @@ tasks:
     content_types: [text_post, ad_copy, whatsapp_message]
     grader:
       type: programmatic
+      entry_point: server.graders:grade_multi_label
 
   - name: ad-policy-compliance
     difficulty: medium_hard
@@ -50,6 +52,7 @@ tasks:
     content_types: [ad_copy]
     grader:
       type: programmatic
+      entry_point: server.graders:grade_ad_policy
 
   - name: thread-moderation-hard
     difficulty: hard
@@ -61,6 +64,7 @@ tasks:
     content_types: [whatsapp_message]
     grader:
       type: programmatic
+      entry_point: server.graders:grade_thread_hard
 
 observation_space:
   type: object
