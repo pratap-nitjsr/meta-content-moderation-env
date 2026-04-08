@@ -2474,3 +2474,4 @@ zipp==3.23.0 \
     --hash=sha256:a07157588a12518c9d4034df3fbbee09c814741a33ff63c05fa29d26a2404166
     # via importlib-metadata
 python-dotenv==1.2.2
+openai==2.30.0
