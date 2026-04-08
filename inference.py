@@ -43,10 +43,10 @@ dotenv.load_dotenv()
 
 API_BASE_URL = os.getenv("API_BASE_URL", "https://router.huggingface.co/v1")
 MODEL_NAME = os.getenv("MODEL_NAME", "meta-llama/Llama-3.3-70B-Instruct")
-API_KEY = os.getenv("HF_TOKEN")
+HF_TOKEN = os.getenv("HF_TOKEN")
 LOCAL_IMAGE_NAME = os.getenv("LOCAL_IMAGE_NAME", "")
 
-if not API_KEY:
+if not HF_TOKEN:
     raise ValueError("HF_TOKEN is a compulsory environment variable.")
 
 TASK_NAME = os.getenv("MODERATION_TASK", "single-label-classify")
@@ -75,7 +75,7 @@ def log_step(step: int, action: str, reward: float, done: bool, error: Optional[
     error_val = error if error else "null"
     done_val = str(done).lower()
     # Sanitize action string: no newlines, truncate to 120 chars
-    action_clean = action.replace("\n", " ").replace("\r", "")[:120]
+    action_clean = action.replace("\n", " ").replace("\r", "")
     print(
         f"[STEP] step={step} action={action_clean} reward={reward:.2f} done={done_val} error={error_val}",
         flush=True,
@@ -362,7 +362,7 @@ def env_state() -> dict:
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
 def main() -> None:
-    client = OpenAI(base_url=API_BASE_URL, api_key=API_KEY)
+    client = OpenAI(base_url=API_BASE_URL, api_key=HF_TOKEN)
 
     rewards: list[float] = []
     steps_taken = 0
