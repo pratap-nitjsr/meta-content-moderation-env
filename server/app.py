@@ -16,7 +16,7 @@ import os
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import PlainTextResponse
+from fastapi.responses import PlainTextResponse, RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
 
 from server.env import MetaContentModerationEnv, VALID_TASKS
@@ -56,6 +56,12 @@ class ResetRequest(BaseModel):
 
 
 # ─── Endpoints ────────────────────────────────────────────────────────────────
+
+@app.get("/", include_in_schema=False)
+def root():
+    """Redirect home page to Swagger documentation."""
+    return RedirectResponse(url="/docs")
+
 
 @app.get("/health")
 def health() -> dict:
