@@ -30,6 +30,8 @@ tasks:
     max_steps: 10
     score_range: [0.0, 1.0]
     content_types: [text_post, image_description]
+    grader:
+      type: programmatic
 
   - name: multi-label-classify
     difficulty: medium
@@ -37,6 +39,8 @@ tasks:
     max_steps: 12
     score_range: [0.0, 1.0]
     content_types: [text_post, ad_copy, whatsapp_message]
+    grader:
+      type: programmatic
 
   - name: ad-policy-compliance
     difficulty: medium_hard
@@ -44,6 +48,8 @@ tasks:
     max_steps: 10
     score_range: [0.0, 1.0]
     content_types: [ad_copy]
+    grader:
+      type: programmatic
 
   - name: thread-moderation-hard
     difficulty: hard
@@ -53,6 +59,8 @@ tasks:
     max_steps: 15
     score_range: [0.0, 1.0]
     content_types: [whatsapp_message]
+    grader:
+      type: programmatic
 
 observation_space:
   type: object
