@@ -153,6 +153,9 @@ class ModerationState(BaseModel):
     items_remaining: int
     decisions_log: list[dict[str, Any]] = Field(default_factory=list)
     score: float = Field(default=0.0, ge=0.0, le=1.0)
+    ground_truth_data: list[dict] = Field(default_factory=list, description="All ground truth data for the current episode (used by grader)")
+    has_policy_conflict: bool = Field(default=False, description="Flag for thread task grader")
+    is_final_message: bool = Field(default=False, description="Flag for thread task grader")
 
 
 class StepResult(BaseModel):

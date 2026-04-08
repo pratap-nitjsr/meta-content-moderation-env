@@ -185,6 +185,9 @@ class MetaContentModerationEnv:
             items_remaining=max(0, self._max_steps - self._step),
             decisions_log=self._decisions_log,
             score=score,
+            ground_truth_data=self._ground_truth_all,
+            has_policy_conflict=bool(self._thread_steps[self._step][2]) if self.task == THREAD_TASK and self._step < len(self._thread_steps) else False,
+            is_final_message=(self._step == self._max_steps - 1) if self.task == THREAD_TASK else False,
         )
 
     # ─── Private Helpers ──────────────────────────────────────────────────────

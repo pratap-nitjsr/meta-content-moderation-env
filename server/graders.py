@@ -229,3 +229,54 @@ def get_ground_truth(content_id: str, all_data: list[dict]) -> dict:
                 "cultural_context": item.get("cultural_context", "") 
             }
     return {"labels": ["clean"], "action": "approve", "policy_ids": [], "cultural_context": ""}
+
+
+# ─── OpenEnv Grader Interface Wrappers ────────────────────────────────────────
+
+def _extract_data(state: Any) -> list[dict]:
+    """Helper to extract ground_truth_data from state dict or object."""
+    if isinstance(state, dict):
+        return state.get("ground_truth_data", [])
+    return getattr(state, "ground_truth_data", [])
+
+
+def single_label_entry(state: Any, action: Any) -> ModerationReward:
+    data = _extract_data(state)
+    gt = get_ground_truth(action.content_id, data)
+    return grade_single_label(action, gt["labels"], gt["action"])
+
+
+def multi_label_entry(state: Any, action: Any) -> ModerationReward:
+    data = _extract_data(state)
+    gt = get_ground_truth(action.content_id, data)
+    return grade_multi_label(action, gt["labels"], gt["action"])
+
+
+def ad_policy_entry(state: Any, action: Any) -> ModerationReward:
+    data = _extract_data(state)
+    gt = get_ground_truth(action.content_id, data)
+    return grade_ad_policy(action, gt["labels"], gt["action"], gt["policy_ids"])
+
+
+def thread_hard_entry(state: Any, action: Any) -> ModerationReward:
+    data = _extract_data(state)
+    gt = get_ground_truth(action.content_id, data)
+    
+    # Thread task needs extra flags usually passed from env.step
+    # If these aren't in state, we use defaults
+    has_conflict = False
+    is_final = False
+    
+    if isinstance(state, dict):
+        has_conflict = state.get("has_policy_conflict", False)
+        is_final = state.get("is_final_message", False)
+    else:
+        has_conflict = getattr(state, "has_policy_conflict", False)
+        is_final = getattr(state, "is_final_message", False)
+
+    return grade_thread_hard(
+        action, gt["labels"], gt["action"],
+        has_policy_conflict=has_conflict,
+        is_final_message=is_final,
+        cultural_context=gt["cultural_context"]
+    )
