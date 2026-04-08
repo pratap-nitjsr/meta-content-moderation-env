@@ -1,44 +1,33 @@
 # Dockerfile
-FROM python:3.11-slim
+FROM ghcr.io/astral-sh/uv:python3.11-bookworm-slim
+WORKDIR /app
 
-# System deps
+# Enable bytecode compilation
+ENV UV_COMPILE_BYTECODE=1
+# Copy from the cache instead of linking since it's a mounted volume
+ENV UV_LINK_MODE=copy
+
+# System deps (curl for healthcheck)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Poetry
-ENV POETRY_VERSION=1.8.2
-ENV POETRY_HOME=/opt/poetry
-ENV POETRY_VENV=/opt/poetry-venv
-ENV POETRY_CACHE_DIR=/opt/.cache
+# Copy uv package definition
+COPY pyproject.toml uv.lock ./
 
-RUN python3 -m venv $POETRY_VENV \
-    && $POETRY_VENV/bin/pip install --upgrade pip \
-    && $POETRY_VENV/bin/pip install poetry==${POETRY_VERSION}
+# Install project dependencies securely
+RUN uv sync --frozen --no-install-project
 
-ENV PATH="${POETRY_VENV}/bin:${PATH}"
-
-# Set workdir
-WORKDIR /app
-
-# Copy dependency files first (for layer caching)
-COPY pyproject.toml ./
-# poetry.lock is optional — include if present
-# COPY poetry.lock ./
-
-# Install dependencies (no dev deps in prod)
-RUN poetry config virtualenvs.create false \
-    && poetry install --only main --no-interaction --no-ansi
-
-# Copy full project
+# Copy project source
 COPY . .
 
-# Expose port
+# Install project layout
+RUN uv sync --frozen
+
 EXPOSE 7860
 
-# Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD curl -f http://localhost:7860/health || exit 1
 
-# Start server
-CMD ["uvicorn", "server.app:app", "--host", "0.0.0.0", "--port", "7860", "--workers", "1"]
+# Start server using natively compiled uv context
+CMD ["uv", "run", "uvicorn", "server.app:app", "--host", "0.0.0.0", "--port", "7860", "--workers", "1"]
