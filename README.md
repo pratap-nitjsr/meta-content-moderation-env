@@ -18,6 +18,8 @@ license: mit
 
 **OpenEnv environment for training and evaluating AI agents on real-world content moderation.**
 
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/Pratap-K/meta-content-moderation-env)
+
 Inspired by the operational challenges of content moderation at Meta scale — billions of posts, dozens of languages, evolving policies, and cultural nuance that breaks English-only models.
 
 ---
@@ -42,7 +44,7 @@ This environment fills that gap. An agent trained or evaluated here could be dir
 | Framework | FastAPI + Pydantic v2 |
 | Package Manager | uv |
 | Python | 3.11+ |
-| Deployment | HF Spaces (Docker) + Local Docker |
+| Deployment | [HF Spaces](https://huggingface.co/spaces/Pratap-K/meta-content-moderation-env) + Local Docker |
 
 ---
 
