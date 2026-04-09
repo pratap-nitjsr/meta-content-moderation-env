@@ -16,6 +16,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy full project
 COPY . .
 
+# Install the package itself (editable) after copying project files so -e . works
+RUN pip install --no-cache-dir -e .
+
 EXPOSE 7860
 
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
