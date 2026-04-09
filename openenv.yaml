@@ -23,6 +23,12 @@ environment:
   module: server.env
   entry_point: server.app:app
 
+graders:
+  single-label-classify: "server.graders:single_label_entry"
+  multi-label-classify: "server.graders:multi_label_entry"
+  ad-policy-compliance: "server.graders:ad_policy_entry"
+  thread-moderation-hard: "server.graders:thread_hard_entry"
+
 tasks:
   - id: single-label-classify
     name: single-label-classify
