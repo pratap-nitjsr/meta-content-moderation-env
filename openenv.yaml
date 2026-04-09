@@ -24,47 +24,31 @@ environment:
   entry_point: server.app:app
 
 tasks:
-  - name: single-label-classify
+  - id: single-label-classify
+    name: single-label-classify
     difficulty: easy
     description: Classify a single content item into one violation category or CLEAN
-    max_steps: 10
-    score_range: [0.0, 1.0]
-    content_types: [text_post, image_description]
-    grader:
-      type: programmatic
-      entry_point: server.graders:single_label_entry
+    grader: "server.graders:single_label_entry"
 
-  - name: multi-label-classify
+  - id: multi-label-classify
+    name: multi-label-classify
     difficulty: medium
     description: Assign all applicable violation labels to content that may violate multiple policies
-    max_steps: 12
-    score_range: [0.0, 1.0]
-    content_types: [text_post, ad_copy, whatsapp_message]
-    grader:
-      type: programmatic
-      entry_point: server.graders:multi_label_entry
+    grader: "server.graders:multi_label_entry"
 
-  - name: ad-policy-compliance
+  - id: ad-policy-compliance
+    name: ad-policy-compliance
     difficulty: medium_hard
     description: Review ad copy against ad policies, identify violations, and cite specific rule IDs
-    max_steps: 10
-    score_range: [0.0, 1.0]
-    content_types: [ad_copy]
-    grader:
-      type: programmatic
-      entry_point: server.graders:ad_policy_entry
+    grader: "server.graders:ad_policy_entry"
 
-  - name: thread-moderation-hard
+  - id: thread-moderation-hard
+    name: thread-moderation-hard
     difficulty: hard
     description: >
       Moderate a full WhatsApp conversation thread with growing context window.
       Handles cultural nuance, multi-label violations, and conflicting policy resolution.
-    max_steps: 15
-    score_range: [0.0, 1.0]
-    content_types: [whatsapp_message]
-    grader:
-      type: programmatic
-      entry_point: server.graders:thread_hard_entry
+    grader: "server.graders:thread_hard_entry"
 
 observation_space:
   type: object
