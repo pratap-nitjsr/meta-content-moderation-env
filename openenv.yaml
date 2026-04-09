@@ -29,18 +29,21 @@ tasks:
     difficulty: easy
     description: Classify a single content item into one violation category or CLEAN
     grader: "server.graders:single_label_entry"
+    grader_import: "server.graders.single_label_entry"
 
   - id: multi-label-classify
     name: multi-label-classify
     difficulty: medium
     description: Assign all applicable violation labels to content that may violate multiple policies
     grader: "server.graders:multi_label_entry"
+    grader_import: "server.graders.multi_label_entry"
 
   - id: ad-policy-compliance
     name: ad-policy-compliance
     difficulty: medium_hard
     description: Review ad copy against ad policies, identify violations, and cite specific rule IDs
     grader: "server.graders:ad_policy_entry"
+    grader_import: "server.graders.ad_policy_entry"
 
   - id: thread-moderation-hard
     name: thread-moderation-hard
@@ -49,6 +52,7 @@ tasks:
       Moderate a full WhatsApp conversation thread with growing context window.
       Handles cultural nuance, multi-label violations, and conflicting policy resolution.
     grader: "server.graders:thread_hard_entry"
+    grader_import: "server.graders.thread_hard_entry"
 
 observation_space:
   type: object

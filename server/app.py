@@ -27,6 +27,26 @@ from server.models import (
     StepResult,
 )
 
+# Try to import OpenEnv core package at runtime and log availability.
+# Prefer the new `openenv.core` import; fall back to legacy `openenv_core` if needed.
+_oe_imported = False
+for _mod in ("openenv.core", "openenv_core"):
+    try:
+        _openenv_core = __import__(_mod, fromlist=["*"])
+        _oe_ver = getattr(_openenv_core, "__version__", None)
+        if _oe_ver:
+            print(f"[startup] {_mod} available, version={_oe_ver}")
+        else:
+            print(f"[startup] {_mod} imported (version unknown)")
+        _oe_imported = True
+        break
+    except Exception as _e:
+        # continue to next candidate
+        _oe_last_exc = _e
+
+if not _oe_imported:
+    print(f"[startup] openenv package not importable: {_oe_last_exc}")
+
 # ─── App Init ─────────────────────────────────────────────────────────────────
 
 app = FastAPI(
