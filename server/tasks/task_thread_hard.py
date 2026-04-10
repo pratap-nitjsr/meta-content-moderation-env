@@ -19,7 +19,7 @@ Description:
     - False positive rate on political speech protected content
 """
 from __future__ import annotations
-from server.models import ContentItem, ModerationObservation
+from models import ContentItem, ModerationObservation
 from server.dataset import get_whatsapp_threads, get_community_standards
 
 TASK_NAME = "thread-moderation-hard"

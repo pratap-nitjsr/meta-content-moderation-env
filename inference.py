@@ -346,7 +346,7 @@ def env_reset(task: str, seed: int) -> dict:
 def env_step(decision: dict) -> dict:
     resp = httpx.post(
         f"{ENV_BASE_URL}/step",
-        json=decision,
+        json={"action": decision},
         timeout=30,
     )
     resp.raise_for_status()

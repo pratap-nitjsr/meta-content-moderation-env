@@ -6,7 +6,7 @@ and Dense NLP Keyword Reasoning evaluation.
 """
 from __future__ import annotations
 import re
-from server.models import ModerationDecision, ModerationReward, ViolationCategory, ModerationAction
+from models import ModerationDecision, ModerationReward, ViolationCategory, ModerationAction
 
 
 # ─── Novel Grading Math ───────────────────────────────────────────────────────

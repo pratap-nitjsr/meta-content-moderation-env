@@ -11,7 +11,7 @@ Description:
     Agent is penalized more for false positives than false negatives.
 """
 from __future__ import annotations
-from server.models import ContentItem, ModerationObservation
+from models import ContentItem, ModerationObservation
 from server.dataset import get_posts, get_ad_copies, get_community_standards, get_policy_excerpt
 
 TASK_NAME = "multi-label-classify"

@@ -13,7 +13,7 @@ Description:
     Full credit requires both correct label AND correct policy_citations.
 """
 from __future__ import annotations
-from server.models import ContentItem, ModerationObservation
+from models import ContentItem, ModerationObservation
 from server.dataset import get_ad_copies, get_ad_policies
 
 TASK_NAME = "ad-policy-compliance"

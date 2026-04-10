@@ -10,7 +10,7 @@ Description:
     Action must be one of: approve (if CLEAN) or remove/restrict.
 """
 from __future__ import annotations
-from server.models import (
+from models import (
     ContentItem, ModerationObservation, ContentType
 )
 from server.dataset import get_posts, get_image_descriptions, get_policy_excerpt, get_community_standards

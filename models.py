@@ -1,9 +1,9 @@
-# app/models.py
 from __future__ import annotations
 from enum import Enum
 from typing import Any
 from pydantic import BaseModel, Field, model_validator
 
+from openenv.core.env_server.types import Action, Observation
 
 class ViolationCategory(str, Enum):
     """All possible content violation categories."""
@@ -18,14 +18,12 @@ class ViolationCategory(str, Enum):
     SCAM = "scam"
     CLEAN = "clean"  # No violation
 
-
 class ContentType(str, Enum):
     """Type of content being moderated."""
     TEXT_POST = "text_post"
     IMAGE_DESCRIPTION = "image_description"
     AD_COPY = "ad_copy"
     WHATSAPP_MESSAGE = "whatsapp_message"
-
 
 class ModerationAction(str, Enum):
     """Actions the agent can take on content."""
@@ -34,7 +32,6 @@ class ModerationAction(str, Enum):
     ESCALATE = "escalate"
     RESTRICT = "restrict"         # Limit reach, don't remove
     REQUEST_REVIEW = "request_review"
-
 
 class ContentItem(BaseModel):
     """A single piece of content to be moderated."""
@@ -60,13 +57,12 @@ class ContentItem(BaseModel):
         description="Corresponding media types (e.g. 'image', 'video')"
     )
 
-
-class ModerationObservation(BaseModel):
+class ModerationObservation(Observation):
     """
     What the agent sees at each step.
-    Contains the content item to moderate plus any policy references.
+    Inherits from Observation (which provides `done`, `reward`, `metadata`).
     """
-    step: int = Field(..., ge=0, description="Current step index")
+    step: int = Field(default=0, ge=0, description="Current step index")
     content_item: ContentItem
     policy_excerpt: str = Field(
         default="",
@@ -80,11 +76,10 @@ class ModerationObservation(BaseModel):
         default_factory=list,
         description="Names of policies that may conflict for this item (hard task)"
     )
-    task_name: str = Field(..., description="Active task identifier")
-    instructions: str = Field(..., description="Natural language task instructions for the agent")
+    task_name: str = Field(default="", description="Active task identifier")
+    instructions: str = Field(default="", description="Natural language task instructions for the agent")
 
-
-class ModerationDecision(BaseModel):
+class ModerationDecision(Action):
     """
     The agent's moderation decision for a single content item.
     This is what the agent submits via step().
@@ -116,7 +111,6 @@ class ModerationDecision(BaseModel):
             raise ValueError("CLEAN label cannot be combined with violation labels")
         return self
 
-
 class ModerationReward(BaseModel):
     """
     Structured reward breakdown for one step.
@@ -137,7 +131,6 @@ class ModerationReward(BaseModel):
         description="Raw component scores for debugging"
     )
 
-
 class ModerationState(BaseModel):
     """
     Full internal state of the environment.
@@ -156,12 +149,3 @@ class ModerationState(BaseModel):
     ground_truth_data: list[dict] = Field(default_factory=list, description="All ground truth data for the current episode (used by grader)")
     has_policy_conflict: bool = Field(default=False, description="Flag for thread task grader")
     is_final_message: bool = Field(default=False, description="Flag for thread task grader")
-
-
-class StepResult(BaseModel):
-    """Return type of env.step() — mirrors OpenEnv spec."""
-    observation: ModerationObservation
-    reward: float
-    reward_breakdown: ModerationReward
-    done: bool
-    info: dict[str, Any] = Field(default_factory=dict)
