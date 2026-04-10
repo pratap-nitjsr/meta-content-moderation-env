@@ -228,8 +228,16 @@ class MetaContentModerationEnv(Environment[ModerationDecision, ModerationObserva
 
     def _compute_score(self) -> float:
         if not self._decisions_log:
-            return 0.0
+            return 0.01
         max_possible = self._max_steps * 1.0
-        raw = self._cumulative_reward / max_possible if max_possible > 0 else 0.0
-        return round(min(max(raw, 0.0), 1.0), 4)
+        if max_possible <= 0:
+            return 0.01
+            
+        avg_reward = self._cumulative_reward / max_possible
+        # Map avg_reward from [-1.0, 1.0] to [0.0, 1.0]
+        normalized = (avg_reward + 1.0) / 2.0
+        
+        # Clamp strictly between 0.01 and 0.99 for OpenEnv
+        score = min(max(normalized, 0.01), 0.99)
+        return round(score, 4)
 

@@ -29,6 +29,17 @@ app = create_app(
     max_concurrent_envs=1
 )
 
+# Remove the default /state route added by create_app so our custom one below is used
+app.router.routes[:] = [r for r in app.router.routes if getattr(r, "path", None) != "/state"]
+
+# Force the state endpoint to return our full ModerationState (including 'score')
+@app.get("/state")
+def get_state():
+    """Returns the full environment state including custom fields like score."""
+    # We use the singleton instance
+    env = MetaContentModerationEnv()
+    return env.state
+
 # Custom extra routes specific to this environment
 @app.get("/", include_in_schema=False)
 def root():
