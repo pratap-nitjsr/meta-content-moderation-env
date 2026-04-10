@@ -1,1 +1,0 @@
-['/openapi.json', '/docs', '/docs/oauth2-redirect', '/redoc', '/mcp', '/reset', '/step', '/state', '/metadata', '/health', '/schema', '/mcp', '/ws', '/state', '/', '/tasks', '/openenv.yaml']
