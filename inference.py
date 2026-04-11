@@ -361,21 +361,23 @@ def env_state() -> dict:
 
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
-def main() -> None:
-    client = OpenAI(base_url=API_BASE_URL, api_key=HF_TOKEN)
-
+def run_task(client: OpenAI, task_name: str, seed: int) -> None:
+    """Run inference for a specific task and log results."""
     rewards: list[float] = []
     steps_taken = 0
     score = 0.0
     success = False
 
-    log_start(task=TASK_NAME, env=BENCHMARK, model=MODEL_NAME)
+    # Get max steps for this specific task
+    max_steps = int(os.getenv("MAX_STEPS_OVERRIDE", str(TASK_MAX_STEPS.get(task_name, 10))))
+    
+    log_start(task=task_name, env=BENCHMARK, model=MODEL_NAME)
 
     try:
         # Reset environment
-        obs = env_reset(task=TASK_NAME, seed=SEED)
+        obs = env_reset(task=task_name, seed=seed)
 
-        for step in range(1, MAX_STEPS + 1):
+        for step in range(1, max_steps + 1):
             if obs.get("content_item", {}).get("content_id") == "__terminal__":
                 break
 
@@ -421,11 +423,28 @@ def main() -> None:
         success = score >= SUCCESS_SCORE_THRESHOLD
 
     except Exception as e:
-        print(f"[DEBUG] Fatal error: {e}\n{traceback.format_exc()}", flush=True)
+        print(f"[DEBUG] Fatal error in task {task_name}: {e}\n{traceback.format_exc()}", flush=True)
         success = False
 
     finally:
         log_end(success=success, steps=steps_taken, score=score, rewards=rewards)
+
+
+def main() -> None:
+    client = OpenAI(base_url=API_BASE_URL, api_key=HF_TOKEN)
+    
+    # List of tasks to iterate through
+    tasks_to_run = [
+        "single-label-classify",
+        "multi-label-classify",
+        "ad-policy-compliance",
+        "thread-moderation-hard"
+    ]
+    
+    # If MODERATION_TASK is set and valid, we could prioritize it, 
+    # but the requirement is to iterate through all.
+    for task in tasks_to_run:
+        run_task(client, task, SEED)
 
 
 if __name__ == "__main__":
